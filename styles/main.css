@@ -191,6 +191,7 @@ section {
 @media (max-width: 768px) {
   .about-me-info {
     font-size: 18px;
+    padding-left: 20px;
     width: 90%;
   }
 }
