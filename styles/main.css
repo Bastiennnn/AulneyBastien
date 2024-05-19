@@ -188,6 +188,13 @@ section {
   width: 800px;
 }
 
+@media (max-width: 768px) {
+  .about-me-info {
+    font-size: 18px;
+    width: 90%;
+  }
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
