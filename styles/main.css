@@ -177,11 +177,11 @@ nav ul li a:hover{
 section {
   padding: 100px 20px;
   text-align: center;
-  border: 1px solid #333;
+  border: 1px solid black;
 }
 
 #about, #portfolio, #skills, #contact {
-  background: #222;
+  background: black;
   margin-top: -1px;
 }
 
@@ -247,7 +247,9 @@ footer {
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
   width: 100px;
   height: 100px;
+  padding-top: 10px;
   border-radius: 10px;
+  background-color: rgba(255, 255, 0, 0.3);
 }
 
 .skill:hover {
