@@ -104,15 +104,6 @@
     <p>&copy; 2024 Bastien Aulney. All rights reserved.</p>
   </footer>
 
-  <script>
-    document.querySelectorAll('nav ul li a, .btn').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-  </script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>
