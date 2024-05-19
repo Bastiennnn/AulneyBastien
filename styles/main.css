@@ -80,7 +80,7 @@ nav ul li a:hover{
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: gradientAnimation 5s linear infinite;
+  animation: gradientAnimation 2s linear infinite;
 }
 
 @keyframes gradientAnimation {
