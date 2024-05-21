@@ -245,8 +245,8 @@ footer {
 
 .skill {
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-  width: 80px;
-  height: 100px;
+  width: 100px;
+  height: 80px;
   padding-top: 20px;
   border-radius: 10px;
   background-color: rgba(255, 255, 0, 0.3);
