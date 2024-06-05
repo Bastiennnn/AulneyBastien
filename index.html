@@ -7,6 +7,33 @@
   <link rel="shortcut icon" type="image/png" href="assets/b-icon.jpg"/>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .project-section {
+      padding: 50px 20px;
+      background-color: #f8f8f8;
+    }
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .project-content {
+      max-width: 800px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .project-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .project-description {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
   <header id="header">
@@ -15,6 +42,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -49,7 +77,6 @@
       <div class="particle"></div>
       <div class="particle"></div>
       <div class="particle"></div>
-      <div class="particle"></div>
     </div>
   </section>
 
@@ -62,7 +89,7 @@
             Passionate <b class="y">Web Developer</b> with a keen eye for detail and a love for creating engaging digital experiences. With over <b class="y">2 years</b> of experience in development, I specialize in building responsive and user-friendly websites using modern web technologies.
           </p>
           <p>
-            I have a strong background in development, specializing in creating engaging user experiences and intuitive interfaces . When I'm not coding, you can find me on the <b class="y">basketball court</b>, <b class="y">drumming</b>, exploring the latest releases in the American <b class="y">rap scene</b>, or immersing myself in the world of <b class="y">video games</b> such as Valorant, League of Legends.
+            I have a strong background in development, specializing in creating engaging user experiences and intuitive interfaces. When I'm not coding, you can find me on the <b class="y">basketball court</b>, <b class="y">drumming</b>, exploring the latest releases in the American <b class="y">rap scene</b>, or immersing myself in the world of <b class="y">video games</b> such as Valorant, League of Legends.
           </p>
           <p>
             I believe in continuous learning, embracing challenges, and pushing boundaries to deliver exceptional results. Let's connect and bring your ideas to life!
@@ -103,18 +130,74 @@
         </div>
         <div class="skill">
           <i class="fa-brands fa-node-js"></i>
-          <span class="tooltip" id="spanskills">Node-js</span>
+          <span class="tooltip" id="spanskills">Node.js</span>
           <progress class="tooltip" id="progress" max="100" value="70">70%</progress>
         </div>
       </div>
     </div>
   </section>
 
+  <section id="projects" class="section project-section">
+    <div class="content">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project-content">
+          <h3>Effet de Serre - Projet de Mesure de Température et d'Humidité</h3>
+          <img src="assets/project1.jpg" alt="Effet de Serre - Interface Web">
+          <img src="assets/project2.jpg" alt="Effet de Serre - Téléchargement CSV">
+          <p class="project-description">
+            Le projet "Effet de Serre" est une application IoT développée pour mesurer et surveiller les conditions environnementales, en particulier la température et l'humidité. Ce projet utilise un capteur DHT11 connecté à une carte ESP8266 pour recueillir les données. Ces données sont ensuite mises à disposition via un point d'accès Wi-Fi, permettant aux utilisateurs de consulter les mesures en temps réel et de télécharger les données sous forme de fichier CSV.
+          </p>
+          <p class="project-description">
+            <strong>Objectifs :</strong>
+            <ul>
+              <li>Surveillance des Conditions Environnementales</li>
+              <li>Accessibilité en Temps Réel</li>
+              <li>Téléchargement des Données</li>
+            </ul>
+          </p>
+          <p class="project-description">
+            <strong>Technologies Utilisées :</strong>
+            <ul>
+              <li>ESP8266</li>
+              <li>DHT11</li>
+              <li>MicroPython</li>
+              <li>HTML/CSS</li>
+              <li>Socket Programming</li>
+            </ul>
+          </p>
+          <p class="project-description">
+            <strong>Détails Techniques :</strong>
+            <ul>
+              <li>Initialisation et Configuration du capteur DHT11 et de l'ESP8266.</li>
+              <li>Mesure des Données à intervalles réguliers.</li>
+              <li>Interface Web responsive pour afficher les données actuelles et configurer les paramètres de mesure.</li>
+              <li>Téléchargement des Données en fichier CSV.</li>
+            </ul>
+          </p>
+          <p class="project-description">
+            <strong>Utilisation :</strong>
+            <ol>
+              <li>Accès au Point d'Accès : Connectez-vous au réseau Wi-Fi nommé "clebasmeteo" avec le mot de passe "clebas".</li>
+              <li>Accès à l'Interface Web : Ouvrez un navigateur web et entrez l'adresse IP `192.168.4.1` pour accéder à l'interface utilisateur.</li>
+              <li>Configuration des Mesures : Utilisez l'interface pour définir le nombre de mesures à prendre et l'intervalle entre chaque mesure.</li>
+              <li>Téléchargement des Données : Après avoir pris les mesures, téléchargez les données en cliquant sur le bouton "Télécharger CSV".</li>
+            </ol>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
+    <div class="content">
       <h2>Contact</h2>
-      <p>To contact me, please send an email to <a href="mailto:bastienaulney@gmail.com">bastienaulney@gmail.com</a> or on discord : bastiien_ .</p>
-      <a href="https://x.com/Bastii1_"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/bastienaulney/?hl=fr"><i class="fab fa-instagram"></i></a>
+      <p>To contact me, please send an email to <a href="mailto:bastienaulney@gmail.com">bastienaulney@gmail.com</a> or on Discord: bastiien_.</p>
+      <div class="social-icons">
+        <a href="https://x.com/Bastii1_"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/bastienaulney/?hl=fr"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
   </section>
 
   <footer>
