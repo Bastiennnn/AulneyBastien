@@ -212,8 +212,7 @@ section {
   margin-bottom: 30px;
 }
 .project-content img {
-  width: 200px;
-  height: auto;
+  size: 200px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
