@@ -203,6 +203,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background: black;
 }
 
 .projects .project {
@@ -211,9 +212,8 @@ section {
   background: #333;
   border-radius: 10px;
   width: 300px;
-  text-align: left;
+  color: #fff;
 }
-
 .projects .project img {
   width: 100%;
   border-radius: 5px;
@@ -387,20 +387,4 @@ html {
   top: 100%;
   opacity: 1;
   pointer-events: auto;
-}
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: black; /* Changement: Fond noir */
-}
-
-.projects .project {
-  margin: 10px;
-  padding: 20px;
-  background: #333; /* Changement: Fond gris foncé */
-  border-radius: 10px;
-  width: 300px;
-  color: #fff; /* Changement: Texte blanc */
 }
