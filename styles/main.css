@@ -216,6 +216,8 @@ section {
 
 .project-card img {
   width: 100%;
+  max-width: 400px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+  height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
 }
