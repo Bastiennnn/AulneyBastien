@@ -219,16 +219,7 @@ section {
   line-height: 1.5;
 }
 
-.project-card ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-.project-card ul li {
-  margin-bottom: 5px;
-}
-
-#skills .skills-list {
+#skills .skills-list .project-card{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
